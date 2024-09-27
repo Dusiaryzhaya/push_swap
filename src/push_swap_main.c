@@ -6,13 +6,14 @@
 /*   By: anilchen <anilchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 16:35:03 by anilchen          #+#    #+#             */
-/*   Updated: 2024/09/27 12:45:24 by anilchen         ###   ########.fr       */
+/*   Updated: 2024/09/27 13:32:35 by anilchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 // commands:
+// python3 tester.py
 // ARG="1 5 2 4 3" && ./push_swap $ARG | ./checker_linux $ARG
 // ARG="1 5 2 4 3" && ./push_swap $ARG | wc -l
 
