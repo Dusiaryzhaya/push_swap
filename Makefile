@@ -6,13 +6,13 @@
 #    By: anilchen <anilchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/09 14:53:42 by anilchen          #+#    #+#              #
-#    Updated: 2024/09/25 15:21:53 by anilchen         ###   ########.fr        #
+#    Updated: 2024/09/27 13:14:38 by anilchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 CC = cc
-CFLAGS = -g -Wall -Wextra -Werror -I$(LIBFT_DIR) 
+CFLAGS = -Wall -Wextra -Werror -I$(LIBFT_DIR) 
 
 LIBFT_DIR = libft
 LIBFT_NAME = $(LIBFT_DIR)/libft.a
