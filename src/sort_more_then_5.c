@@ -6,7 +6,7 @@
 /*   By: anilchen <anilchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 14:06:34 by anilchen          #+#    #+#             */
-/*   Updated: 2024/09/26 16:17:48 by anilchen         ###   ########.fr       */
+/*   Updated: 2024/09/27 13:11:50 by anilchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,10 +80,3 @@ void	sorting_more_then_5(t_stack **head_a, int len)
 	max_bits = max_index_to_binary(max_index);
 	radix_sort(head_a, &head_b, max_bits);
 }
-
-// This is the main function to start sorting. If the stack is already sorted,
-//  no sorting is performed. Depending on the stack length,
-//	the appropriate sorting is called:
-// For a stack of length ≤ 3, stack_size is called.
-// For a stack of length 4 to 5, sorting_5 is called.
-// For longer stacks, sorting is called.
