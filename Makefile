@@ -6,7 +6,7 @@
 #    By: anilchen <anilchen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/09 14:53:42 by anilchen          #+#    #+#              #
-#    Updated: 2024/09/27 13:14:38 by anilchen         ###   ########.fr        #
+#    Updated: 2024/09/27 13:19:25 by anilchen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,12 +22,9 @@ OBJ_DIR = obj
 
 SRCS = $(wildcard $(SRC_DIR)/*.c)
 OBJ = $(SRCS:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
-SRCS_BONUS = $(wildcard $(SRC_BONUS_DIR)/*.c)
-OBJ_BONUS = $(SRCS_BONUS:$(SRC_BONUS_DIR)/%.c=$(OBJ_BONUS_DIR)/%.o)
 
 MSG_LIBFT_CREATED = "Libft successfully created."
 MSG_EXEC_CREATED = "Executable successfully created."
-MSG_BONUS_EXEC_CREATED = "Bonus executable successfully created."
 MSG_CLEAN = "Cleaning up..."
 MSG_FCLEAN = "Full clean up..."
 
@@ -44,10 +41,8 @@ $(NAME): $(OBJ) $(LIBFT_NAME)
 $(OBJ_DIR):
 	@mkdir -p $(OBJ_DIR)
 
-
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
 	@$(CC) $(CFLAGS) -c $< -o $@ 
-	
 
 clean:
 	@rm -rf $(OBJ_DIR)
